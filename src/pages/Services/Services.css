@@ -1,0 +1,23 @@
+@media only screen and (max-width:991px) {
+    
+    .desktop-card{
+        display:none;
+    }
+    .mobile-card{
+        display: flex;
+        
+    }
+    /* .name-icon{
+        display: flex;
+        justify-content:space-around
+
+    } */
+}
+@media only screen and (min-width:992px) {
+    .mobile-card{
+        display:none;
+        /* margin-top: 200px; */
+    }
+   
+    
+}

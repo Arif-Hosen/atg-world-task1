@@ -6,6 +6,7 @@ import profile1 from '../../ATG intern/profile-img/profile1.png'
 import profile2 from '../../ATG intern/profile-img/profile2.png'
 import profile3 from '../../ATG intern/profile-img/profile3.png'
 import profile4 from '../../ATG intern/profile-img/profile4.png'
+import './Services.css';
 
 
 const fakedata = [
@@ -88,11 +89,24 @@ const Services = () => {
                                 }
 
                                 <div style={{ marginTop: '32px' }}>
-                                    <div>
+                                    <div className='desktop-card'>
                                         <img src={data.profileImg} alt="" />
                                         <p style={{ fontSize: '18px', fontWeight: '600', display: 'inline', marginLeft: '10px' }} className="card-title">{data.name}</p>
-                                        <small style={{ marginLeft: '50%' }}><i class="far fa-eye"></i>1.4k views</small>
-                                        <i style={{ marginLeft: '15px', padding: '6px', backgroundColor: '#EDEEF0', borderRadius: '2px' }} class="fas fa-share-alt"></i>
+                                        <small style={{ marginLeft: '47%' }}><i class="far fa-eye"></i>1.4k views</small>
+                                        <i style={{ marginLeft: '10px', padding: '6px', backgroundColor: '#EDEEF0', borderRadius: '2px' }} class="fas fa-share-alt"></i>
+                                    </div>
+
+                                    <div className=' mobile-card' >
+                                        <img src={data.profileImg} alt="" />
+
+                                        <div>
+                                            <p style={{ fontSize: '18px', fontWeight: '600', display: 'inline', marginLeft: '10px' }} className="card-title">{data.name}</p>
+                                            <p style={{ fontSize: '12' }}><i class="far fa-eye"></i>1.4k views</p>
+                                        </div>
+                                        <div style={{ marginLeft: '45%' }}>
+                                            <i style={{ padding: '6px', textAlign: 'end', backgroundColor: '#EDEEF0', borderRadius: '2px' }} class="fas fa-share-alt"></i>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>

@@ -4,7 +4,7 @@ import './Post.css'
 
 const Post = () => {
     return (
-        <div className="" >
+        <div className="mt-3" >
             <div className='post'  >
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '5px' }}>
                     <h5>Post(365)</h5>
@@ -21,7 +21,8 @@ const Post = () => {
                 </div>
             </div>
 
-            <nav className="desktop nav  mt-5 container-fluid" >
+            <nav className="desktop ml:'auto' nav  mt-5 container-fluid" >
+
                 <a style={{ color: 'black' }} class="nav-link active" aria-current="page" href="#">All Post(32)</a>
                 <a style={{ color: '#8A8A8A' }} class="nav-link" href="#">Article</a>
                 <a style={{ color: '#8A8A8A' }} class="nav-link" href="#">Event</a>
@@ -30,7 +31,8 @@ const Post = () => {
 
 
 
-                <div style={{ display: 'inline', marginLeft: 'auto' }} className="dropdown">
+
+                <div style={{ display: 'inline', marginLeft: '' }} className="dropdown">
                     <button style={{
                         background: '#EDEEF0',
                         borderRadius: '4px', fontSize: '15px', color: 'black'
